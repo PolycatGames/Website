@@ -1,0 +1,47 @@
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100vw;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bubbles span {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(220, 135, 79);
+
+    /*4fc3dc*/
+    animation: staranimation 15s linear infinite;
+    animation-duration: calc(400s/var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: #fff6f5;
+    box-shadow: 0 0 5px #edfcff;
+}
+
+@keyframes staranimation {
+    0% {
+        transform: translateY(0vh) scale(.05);
+        opacity: 1;
+    }
+
+
+    100% {
+        transform: translateY(100vh) scale(.8);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Font';
+  src: url(/fonts/titles/font.otf);
+}
+
+@font-face {
+  font-family: 'Main';
+  src: url(/fonts/main/D-DIN.otf);
+  font-weight: 400;
+}
