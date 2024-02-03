@@ -128,8 +128,9 @@ article {
 
 .landing div {
     border-bottom: 1px solid white;
-    width: 700px;
-    margin: 20px 0;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px 20px;
 }
 
 .landing p {
@@ -184,6 +185,7 @@ article {
 .authors {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
     /*border: 1px solid white;*/
 }
@@ -202,6 +204,18 @@ article {
 
 .author p {
     text-align: center;
+}
+
+.author li {
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.author ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .galaxy {
@@ -239,16 +253,86 @@ article {
     align-items: center;
 }
 
+.item div {
+    width: 100%;
+}
+
 .item>* {
     flex: 1;
 }
 
 .item model-viewer {
     height: 500px;
+    contain: none;
 }
 
 .special-note {
     text-transform: uppercase;
+    font-size: 20px;
     opacity: .5;
 
+}
+
+.prediction-model-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1145px) {
+    .landing span {
+        font-size: 24px;
+    }
+
+    .landing h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 960px) {
+    .title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .landing-img {
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 630px) {
+    .item {
+        flex-direction: column;
+    }
+
+    #item-oposite {
+        flex-direction: column-reverse;
+    }
+
+    .authors {
+        flex-direction: column;
+    }
+
+    .landing span {
+        font-size: 18px;
+    }
+
+    .landing h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 16px;
+    }
+
+    .landing span {
+        font-size: 15px;
+    }
+
+    .landing h1 {
+        font-size: 30px;
+    }
 }

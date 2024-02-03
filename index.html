@@ -15,7 +15,7 @@
   <script src="scroll.js"></script>
   <script src="models.js"></script>
   <script>
-    const version = 2;
+    const version = 3;
   </script>
   <script>
     function loadUpdatedStylesheet() {
@@ -93,50 +93,7 @@
 
   <div class="cover"></div>
   <div class="mist"></div>
-  <!--<div class="container">
-    <div class="bubbles">
-      <span style="--i:11;"></span>
-      <span style="--i:28;"></span>
-      <span style="--i:5;"></span>
-      <span style="--i:12.5;"></span>
-      <span style="--i:18;"></span>
-      <span style="--i:25;"></span>
-      <span style="--i:7;"></span>
-      <span style="--i:9;"></span>
-      <span style="--i:35;"></span>
-      <span style="--i:12;"></span>
-      <span style="--i:20;"></span>
-      <span style="--i:19;"></span>
-      <span style="--i:3;"></span>
-      <span style="--i:31;"></span>
-      <span style="--i:23;"></span>
-      <span style="--i:16;"></span>
-      <span style="--i:27;"></span>
-      <span style="--i:2;"></span>
-      <span style="--i:18.5;"></span>
-      <span style="--i:10;"></span>
-      <span style="--i:6;"></span>
-      <span style="--i:13;"></span>
-      <span style="--i:7.5;"></span>
-      <span style="--i:26;"></span>
-      <span style="--i:17;"></span>
-      <span style="--i:5.5;"></span>
-      <span style="--i:8;"></span>
-      <span style="--i:14;"></span>
-      <span style="--i:4;"></span>
-      <span style="--i:19.5;"></span>
-      <span style="--i:33;"></span>
-      <span style="--i:1;"></span>
-      <span style="--i:21;"></span>
-      <span style="--i:32;"></span>
-      <span style="--i:36;"></span>
-      <span style="--i:24;"></span>
-      <span style="--i:29;"></span>
-      <span style="--i:22;"></span>
-      <span style="--i:25.5;"></span>
-      <span style="--i:15;"></span>
-    </div>
-  </div>-->
+
   <main>
     <article class="landing-page">
       <div class="landing center standard-margin">
@@ -206,7 +163,7 @@
           </model-viewer>
         </div>
       </div>
-      <div class="item scroll-animation">
+      <div class="item scroll-animation" id="item-oposite">
         <model-viewer class="main-model" src="files/models/spectrometer.glb" alt="Spectrometer 3D model" auto-rotate
           camera-controls disable-zoom disable-pan id="model">
         </model-viewer>
@@ -218,9 +175,11 @@
       </div>
     </article>
 
-    <article class="standard-margin scroll-animation">
-      <h2 class="title">Voorspellingsmodel</h2>
-      <h3 class="special-note">Onder Constructie...</h3>
+    <article>
+      <div class="scroll-animation prediction-model-section standard-margin">
+        <h2 class="title">Voorspellingsmodel</h2>
+        <h3 class="special-note">Onder Constructie...</h3>
+      </div>
     </article>
   </main>
 </body>
