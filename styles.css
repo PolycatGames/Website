@@ -257,10 +257,6 @@ article {
     width: 100%;
 }
 
-.item>* {
-    flex: 1;
-}
-
 .item model-viewer {
     height: 500px;
     contain: none;
@@ -298,6 +294,12 @@ article {
 @media (max-width: 750px) {
     .landing-img {
         margin-bottom: 70px;
+    }
+}
+
+@media (min-width: 630px) {
+    .item>* {
+        flex: 1;
     }
 }
 
