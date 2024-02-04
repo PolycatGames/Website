@@ -175,10 +175,35 @@
       </div>
     </article>
 
-    <article>
+    <article class="simulation">
       <div class="scroll-animation prediction-model-section standard-margin">
         <h2 class="title">Voorspellingsmodel</h2>
-        <h3 class="special-note">Onder Constructie...</h3>
+      </div>
+      <div class="scroll-animation">
+        <div id="slider-container">
+          <img src="" alt="Image Sequence" id="image-sequence">
+          <input type="range" min="1" max="230" value="1" id="slider">
+          <p>(Sleep het rode balletje om het voorspellingsmodel af te spelen)</p>
+        </div>
+
+        <script>
+          // Get the slider and image elements
+          var slider = document.getElementById("slider");
+          var image = document.getElementById("image-sequence");
+
+          // Function to update the image source based on slider value
+          function updateImage() {
+            var value = parseInt(slider.value);
+            // Adjust the path and naming of your image sequence accordingly
+            image.src = "/files/simulation/Sequence 0" + (value + 1000).toString() + ".png";
+          }
+
+          // Add event listener to slider
+          slider.addEventListener("input", updateImage);
+
+          // Call the function initially to set the initial image
+          updateImage();
+        </script>
       </div>
     </article>
   </main>

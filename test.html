@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="slider-container">
+        <input type="range" min="1" max="230" value="1" id="slider">
+        <img src="" alt="Image Sequence" id="image-sequence">
+    </div>
+
+    <script>
+        // Get the slider and image elements
+        var slider = document.getElementById("slider");
+        var image = document.getElementById("image-sequence");
+
+        // Function to update the image source based on slider value
+        function updateImage() {
+            var value = parseInt(slider.value);
+            // Adjust the path and naming of your image sequence accordingly
+            image.src = "/files/simulation/Sequence 0" + (value + 1000).toString() + ".png";
+        }
+
+        // Add event listener to slider
+        slider.addEventListener("input", updateImage);
+
+        // Call the function initially to set the initial image
+        updateImage();
+    </script>
+</body>
+
+</html>
