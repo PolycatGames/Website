@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://projectbetelgeuze.nl/sitemap.xml
